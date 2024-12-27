@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "2024-12-27-agent-playground"
+version = "0.1.0"
+description = "playing with agents"
+authors = ["Mark Carlebach <markcarlebach@Marks-MacBook-Pro.local>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+praisonai = "^2.0.16"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
