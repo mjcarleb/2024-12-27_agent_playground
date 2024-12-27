@@ -1,4 +1,15 @@
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
+
+# Rest of imports
 from praisonaiagents import Agent, Task, PraisonAIAgents
+
+# Verify API key is loaded
+if not os.getenv("OPENAI_API_KEY"):
+    raise ValueError("OPENAI_API_KEY not found in environment variables")
 
 # 1. Create agents
 researcher = Agent(
